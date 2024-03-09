@@ -30,7 +30,6 @@ body {
 /* Start header */
 header {
     padding: 100px 0;
-    width: 100%;
     position: relative;
 }
 header .container {
@@ -221,9 +220,10 @@ nav a {
     width: 50%;
 }
 .Concepts .box h1 {
-    font-size: 40px;
+    font-size: 44px;
     font-weight: bold;
     position: relative;
+    padding-right: 179px;
 }
 
 .Concepts .box h1::before {
@@ -236,15 +236,15 @@ nav a {
 }
 
 .Concepts .box p {
-    margin-top: 95px;
-    font-size: 25px;
+    margin-top: 87px;
+    font-size: 27px;
     font-weight: 500;
     color: #878787;
-    padding-right: 90px;
+    padding-right: 54px;
 }
 
 .Concepts .box .btn {
-    margin-top: 25px;
+    margin-top: 20px;
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 500;
@@ -266,11 +266,11 @@ nav a {
         bottom: -60px;
     }
     .Concepts .box p {
-        margin-top: 90px;
-        font-size: 20px;
+        margin-top: 81px;
+        font-size: 22px;
     }
     .Concepts .box .btn {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 }
 
@@ -279,21 +279,52 @@ nav a {
         font-size: 30px;
     }
     .Concepts .box h1::before {
-        bottom: -55px;
+        top: 155%;
     }
     .Concepts .box p {
-        margin-top: 85px;
-        font-size: 15px;
+        margin-top: 63px;
+    font-size: 18px;
     }
     .Concepts .box .btn {
-        margin-top: 15px;
+        margin-top: 0;
     }
 }
 
 @media (max-width: 990px) {
+    .Concepts {
+        padding: 0;
+    }
     .Concepts .container {
         display: block;
         text-align: center;
+    }
+    .Concepts .box {
+        width: 100%;
+    }
+    .Concepts .box h1 {
+        padding: 0 132px;
+    }
+    .Concepts .image {
+        width: 1000%;
+    }
+    .Concepts .box h1::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 11%;
+        height: 7px;
+        background-color: black;
+        border-radius: 5px;
+    }
+    .Concepts .box p {
+        margin-top: 85px;
+        font-size: 18px;
+        padding: 0px 115px;
+    }
+    .Concepts .image {
+        display: inline-block;
+        margin-top: 21px;
     }
 }
 
@@ -305,5 +336,15 @@ nav a {
     width: 100%;
 }
 
-
 /* End Concepts */
+
+/* Start section-tow */
+.section-tow {
+    padding: 100px 0;
+}
+.section-tow .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    position: relative;
+}
+/* End section-tow */
