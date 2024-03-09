@@ -221,7 +221,7 @@ nav a {
     width: 50%;
 }
 .Concepts .box h1 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     position: relative;
 }
@@ -229,21 +229,22 @@ nav a {
 .Concepts .box h1::before {
     content: "";
     position: absolute;
-    bottom: -52px;
+    bottom: -65px;
     width: 20%;
     height: 7px;
     background-color: #FF2E63;
 }
 
 .Concepts .box p {
-    margin-top: 80px;
-    font-size: 20px;
+    margin-top: 95px;
+    font-size: 25px;
     font-weight: 500;
     color: #878787;
+    padding-right: 90px;
 }
 
-.Concepts .box .btn{
-    margin-top: 10px;
+.Concepts .box .btn {
+    margin-top: 25px;
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 500;
@@ -255,7 +256,46 @@ nav a {
     box-shadow: -3px 6px 10px #01010133;
     height: 70px;
     padding: 0 45px;
- }
+}
+
+@media (max-width: 1399px) {
+    .Concepts .box h1 {
+        font-size: 35px;
+    }
+    .Concepts .box h1::before {
+        bottom: -60px;
+    }
+    .Concepts .box p {
+        margin-top: 90px;
+        font-size: 20px;
+    }
+    .Concepts .box .btn {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .Concepts .box h1 {
+        font-size: 30px;
+    }
+    .Concepts .box h1::before {
+        bottom: -55px;
+    }
+    .Concepts .box p {
+        margin-top: 85px;
+        font-size: 15px;
+    }
+    .Concepts .box .btn {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 990px) {
+    .Concepts .container {
+        display: block;
+        text-align: center;
+    }
+}
 
 .Concepts .image {
     width: 50%;
