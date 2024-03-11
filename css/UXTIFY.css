@@ -26,6 +26,7 @@ html {
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
 /* End Global Rules */
@@ -61,7 +62,6 @@ header::after {
     right: -403px;
     transform: translatey(-50%);
     width: 820px;
-    max-width: 100%;
     z-index: -1;
 }
 
@@ -198,7 +198,7 @@ nav a {
         padding-left: 20px;
     }
 
-    nav ul::before {.section-tow::before
+    nav ul::before {
         content: "";
         border-width: 10px;
         border-color: transparent transparent #f6f6f6 transparent;
