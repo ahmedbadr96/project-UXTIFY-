@@ -123,6 +123,13 @@ nav a:hover{
 .home .container {
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+.home .container img:last-of-type {
+    position: absolute;
+    width: 350px;
+    bottom: -95%;
+    left: -25%;
 }
 
 .home .box {
@@ -166,6 +173,8 @@ nav a:hover{
     box-shadow: -3px 6px 10px #01010133;
     height: 70px;
     padding: 0 45px;
+    position: relative;
+    z-index: 3;
 }
 
 .home .image {

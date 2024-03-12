@@ -147,10 +147,16 @@
     }
     .home .box p {
         margin-top: 63px;
-    font-size: 18px;
+        font-size: 18px;
     }
     .home .box .btn {
         margin-top: 0;
+    }
+    .home .container img:last-of-type {
+        position: absolute;
+        width: 300px;
+        bottom: -110%;
+        left: -31%;
     }
 }
 
@@ -190,6 +196,23 @@
     .home img {
         width: 150%;
     }
+    .home .container img:last-of-type {
+        position: absolute;
+        width: 377px;
+        top: 46%;
+        left: -24%;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .home .container img:last-of-type {
+        position: absolute;
+        width: 299px;
+        top: 46%;
+        left: -24%;
+        z-index: 1;
+    }
 }
 
 @media (max-width: 530px) {
@@ -214,6 +237,13 @@
     }
     .home img {
         width: 150%;
+    }
+    .home .container img:last-of-type {
+        position: absolute;
+        width: 230px;
+        top: 36%;
+        left: -26%;
+        z-index: 1;
     }
 }
 
@@ -294,7 +324,7 @@
 @media (max-width: 530px) {
     .services .box h1 {
         font-size: 24px;
-        padding: 0 97px;
+        padding: 0 63px;
         margin-top: 46px;
     }
     .services .box h1::before {
