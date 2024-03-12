@@ -1,0 +1,273 @@
+/* Start header */
+
+@media (max-width: 1200px) {
+    header .container nav a {
+    font-size: 17px;
+    }
+    .main-btn {
+        font-size: 17px;
+    }
+    header::after {
+        right: -470px;
+    }
+}
+
+@media (max-width: 990px) {
+    header::after {
+        display: none;
+    }
+    nav ul{
+        display: none !important;
+    }
+    .main-btn {
+        display: none !important;
+    }
+    header .logo img {
+        height: 45px;
+    }
+    nav .toggle-menu {
+        font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    }
+    nav .icon {
+        width: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        position: absolute;
+        right: 0;
+    }
+    
+    nav .icon span {
+        background-color: #252A34;
+        margin-bottom: 5px;
+        height: 2px;
+    }
+    
+    nav .icon span:nth-child(1) {
+        width: 100%;
+    }
+    
+    nav .icon span:nth-child(2) {
+        width: 75%;
+        transition: 0.3s;
+    }
+    nav:hover span:nth-child(2) {
+        width: 100%;
+    }
+    
+    nav .icon span:nth-child(3) {
+        width: 50%;
+        transition: 0.3s;
+    }
+    nav:hover span:nth-child(3) {
+        width: 100%;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding-left: 10px;
+        min-width: 200px;
+        display: block;
+        background-color: #f6f6f6;
+        border-radius: 5px;
+        box-shadow: -3px 6px 10px #01010133;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 15px);
+        display: none;
+        z-index: 1;
+        
+    }
+
+    nav:hover ul {
+        display: block !important;
+    }
+
+    nav a {
+        transition: 0.5s;
+    }
+
+    nav ul a:hover {
+        padding-left: 20px;
+    }
+
+    nav ul::before {
+        content: "";
+        border-width: 10px;
+        border-color: transparent transparent #f6f6f6 transparent;
+        border-style: solid;
+        position: absolute;
+        top: -20px;
+        right: 5px;
+    }
+}
+
+/* End header */
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* Statr Concepts */
+
+@media (max-width: 1399px) {
+    .Concepts .box h1 {
+        font-size: 35px;
+    }
+    .Concepts .box h1::before {
+        bottom: -60px;
+    }
+    .Concepts .box p {
+        margin-top: 81px;
+        font-size: 22px;
+    }
+    .Concepts .box .btn {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .Concepts .box h1 {
+        font-size: 30px;
+    }
+    .Concepts .box h1::before {
+        top: 155%;
+    }
+    .Concepts .box p {
+        margin-top: 63px;
+    font-size: 18px;
+    }
+    .Concepts .box .btn {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 990px) {
+    .Concepts {
+        padding: 0;
+    }
+    .Concepts .container {
+        display: block;
+        text-align: center;
+    }
+    .Concepts .box {
+        width: 100%;
+    }
+    .Concepts .box h1 {
+        padding: 0 132px;
+    }
+    .Concepts .box h1::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 11%;
+        height: 7px;
+        background-color: var(--circle-color);
+        border-radius: 5px;
+    }
+    .Concepts .box p {
+        margin-top: 85px;
+        font-size: 18px;
+        padding: 0px 115px;
+    }
+    .Concepts .image {
+        display: inline-block;
+        margin-top: 21px;
+    }
+}
+
+@media (max-width: 530px) {
+    .Concepts .box h1 {
+        font-size: 25px;
+    }
+    .Concepts .box h1::before {
+        top: 100px;
+    }
+}
+
+/* End Concepts */
+
+/* --------------------------------------------------------------------------------------------------------- */
+
+/* Start section-two */
+
+@media (max-width: 1399px) {
+    .section-two .box h1 {
+        font-size: 35px;
+    }
+    .section-two .box h1::before {
+        bottom: -90px;
+    }
+    .section-two .box p {
+        margin-top: 140px;
+        font-size: 22px;
+    }
+    .section-two .box .btn {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .section-two .box h1 {
+        font-size: 35px;
+        padding: 0;
+    }
+    .section-two .box h1::before {
+        top: 170%;
+    }
+    .section-two .box p {
+        margin-top: 111px;
+        font-size: 18px;
+    }
+    .section-two .box .btn {
+        margin-top: 24px;
+    }
+}
+
+@media (max-width: 990px) {
+    .section-two {
+        padding: 45px 0;
+    }
+    .section-two .container {
+        display: block;
+        text-align: center;
+    }
+    .section-two .box h1 {
+        padding: 0 132px;
+    }
+    .section-two .box h1::before {
+        content: "";
+        position: absolute;
+        top: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 11%;
+        height: 7px;
+        background-color: var(--color-header-text);
+        border-radius: 5px;
+    }
+    .section-two .box p {
+        margin-top: 85px;
+        font-size: 18px;
+        padding: 0px 115px;
+    }
+    .section-two .image {
+        display: none
+    }
+    .section-two .box .btn {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 530px) {
+    .section-two .box h1 {
+        font-size: 25px;
+    }
+    .section-two .box h1::before {
+        top: 100px;
+    }
+}
+
+/* End section-two */
