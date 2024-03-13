@@ -332,6 +332,63 @@ text-align: center;
     transform: translateY(-3px);
     box-shadow: 0px 8px 15px #01010155;
 }
-
 /* End Portfolio */
-/* hi */
+/* Start about */
+.about {
+    padding: 100px 0;
+}
+.about .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(312px, 1fr));
+    gap: 50px;
+}
+.about .box-one ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    margin-top: 31px;
+}
+.about .box-one li {
+    font-size: 17px;
+    font-weight: 600;
+}
+.about .box-one p {
+    color: var(--circle-color);
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+.about .box-one span {
+    font-weight: bold;
+}
+.about .box-two .icon {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    margin: 15px 63px 46px;
+}
+.about .box-two .icon i {
+    font-size: 25px;
+    color: var(--circle-color);
+    margin-right: 20px;
+}
+.about .box-two .icon p {
+    margin: 0;
+    font-size: 17px;
+}
+.about .box-three h2 {
+    font-size: 24px;
+    color: var(--circle-color);
+    margin: 0;
+}
+.about .box-three p {
+    font-size: 17px;
+    padding-right: 72px;
+    margin-top: 30px;
+}
+.about .box-three .image img {
+    width: 32px;
+    margin: 13px 0 0 19px;
+}
+/* End about */
