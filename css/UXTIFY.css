@@ -88,11 +88,13 @@ nav a {
     text-decoration: none;
     color: var(--main-color);
     font-weight: 500;
-    transition: 0.3s;
+    transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-nav a:hover{
-    color: var(--color-header-text-two);
+nav a:hover {
+    color: #FF2E63;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .main-btn {
@@ -103,11 +105,20 @@ nav a:hover{
     background-color: white;
     border: none;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
     box-shadow: -3px 6px 10px #01010133;
     height: 63px;
     padding: 0 45px;
 }
+
+.main-btn:hover {
+    background-color: #ff4c79;
+    color: white;
+    box-shadow: 0px 8px 15px #01010155;
+    transform: translateY(-3px);
+}
+
+
 
 /* End header */
 /* --------------------------------------------------------------------------------------------------------- */
@@ -177,6 +188,13 @@ nav a:hover{
     z-index: 3;
 }
 
+.home .box .btn:hover {
+    background-color: #04a3a2;
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px #01010155;
+}
+
+
 .home .image {
     width: 50%;
     z-index: 1;
@@ -195,13 +213,6 @@ nav a:hover{
     background-color: white;
     position: relative;
 }
-
-/* .services::before {
-    content: url(../images/small\ ellipse.png);
-    position: absolute;
-    top: -100px;
-    left: -205px;
-} */
 
 .services .container {
     display: grid;
@@ -247,6 +258,7 @@ nav a:hover{
     color: #878787;
 }
 
+
 .services .box .btn {
     margin-top: 20px;
     text-transform: capitalize;
@@ -262,4 +274,64 @@ nav a:hover{
     padding: 0px 45px;
 }
 
+.services .box .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(1, 1, 1, 0.3);
+}
+
+
 /* End services */
+
+/* Start Portfolio */
+.Portfolio {
+    padding: 222px 0;
+    position: relative;
+    background-image: url(../images/project.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.Portfolio .box {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.Portfolio .box h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.Portfolio .box p {
+    color: white;
+    font-weight: 400;
+    margin: 0;
+}
+
+.Portfolio .box .btn {
+    margin-top: 35px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #08D9D6;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: -3px 6px 10px #01010133;
+    height: 70px;
+    padding: 0 45px;
+    position: relative;
+    z-index: 3;
+}
+
+.Portfolio .box .btn:hover {
+    background-color: #04a3a2;
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px #01010155;
+}
+
+/* End Portfolio */
+/* hi */
