@@ -1,13 +1,12 @@
 /* start variables  */
 :root {
-    --main-color: #616161;
+    --nav: #616161;
     --background-color: #EAEAEA;
     --color-header-text: #252A34;
-    --circle-color: #FF2E63;
+    --main-color: #FF2E63;
     --btn-color: #08D9D6;
     --padding: 100px 0;
     --test-color: #08d918;
-    --color-header-text-two: #FF2E63;
 }
 /* End variables  */
 /* Start Global Rules */
@@ -86,7 +85,7 @@ nav a {
     display: block;
     font-size: 20px;
     text-decoration: none;
-    color: var(--main-color);
+    color: var(--nav);
     font-weight: 500;
     transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -213,6 +212,15 @@ nav a:hover {
     background-color: white;
     position: relative;
 }
+.services::after {
+    content: url(../images/middle\ ellipse.png);
+    position: absolute;
+    top: 75%;
+    right: -370px;
+    transform: translatey(-50%);
+    width: 506px;
+    z-index: 1;
+}
 
 .services .container {
     display: grid;
@@ -232,11 +240,13 @@ nav a:hover {
 .services .box {
     display: block;
     max-height: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .services .box h1 {
     font-size: 44px;
-    color: var(--color-header-text-two);
+    color: var(--main-color);
     font-weight: bold;
     position: relative;
     padding-right: 100px;
@@ -351,10 +361,10 @@ text-align: center;
 }
 .about .box-one li {
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .about .box-one p {
-    color: var(--circle-color);
+    color: var(--main-color);
     font-size: 22px;
     font-weight: 500;
     margin-top: 40px;
@@ -370,25 +380,31 @@ text-align: center;
 }
 .about .box-two .icon i {
     font-size: 25px;
-    color: var(--circle-color);
+    color: var(--main-color);
     margin-right: 20px;
 }
 .about .box-two .icon p {
     margin: 0;
     font-size: 17px;
+    font-weight: 500;
 }
 .about .box-three h2 {
     font-size: 24px;
-    color: var(--circle-color);
+    color: var(--main-color);
     margin: 0;
 }
 .about .box-three p {
     font-size: 17px;
     padding-right: 72px;
     margin-top: 30px;
+    font-weight: 500;
+    color: #878787;
 }
 .about .box-three .image img {
     width: 32px;
     margin: 13px 0 0 19px;
+}
+.about .box-three .image img:first-child {
+    margin: 13px 0 0 0;
 }
 /* End about */
