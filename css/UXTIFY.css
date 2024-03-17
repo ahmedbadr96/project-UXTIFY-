@@ -222,13 +222,15 @@ nav a:hover {
     position: relative;
 }
 .services::after {
-    content: url(../images/middle\ ellipse.png);
+    content: "";
     position: absolute;
-    top: 75%;
-    right: -370px;
-    transform: translatey(-50%);
     width: 506px;
+    height: 506px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    bottom: 8%;
     z-index: 1;
+    right: -15%;
 }
 
 .services .container {
