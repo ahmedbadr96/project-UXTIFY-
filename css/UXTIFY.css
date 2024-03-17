@@ -47,7 +47,7 @@ header .container {
 }
 
 header .logo {
-    width: 16%;
+    width: 20%;
 }
 header .logo img {
     height: 54px;
@@ -55,13 +55,15 @@ header .logo img {
 }
 
 header::after {
-    content: url(../images/big\ ellipse\ .png);
+    content: "";
     position: absolute;
-    top: 50%;
-    right: -403px;
-    transform: translatey(-50%);
-    width: 820px;
+    width: 1005px;
+    height: 1005px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    top: -112%;
     z-index: -1;
+    right: -22%;
 }
 
 nav {
@@ -77,8 +79,8 @@ nav ul {
     flex: 1;
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    margin: 0 53px;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
@@ -88,6 +90,9 @@ nav a {
     color: var(--nav);
     font-weight: 500;
     transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 80px;
+    padding: 10px 16px;
+    border-radius: 5px;
 }
 
 nav a:hover {

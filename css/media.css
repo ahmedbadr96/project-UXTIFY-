@@ -1,14 +1,92 @@
+/* start ellipse */
+@media (max-width: 1800px) {
+    header::after {
+        top: -107%;
+        right: -26%;
+        width: 990px;
+        height: 990px;
+    }
+}
+@media (max-width: 1700px) {
+    header::after {
+        top: -99%;
+        right: -30%;
+        width: 970px;
+        height: 970px;
+    }
+}
+
+@media (max-width: 1600px) {
+    header::after {
+        top: -99%;
+        right: -32%;
+        width: 950px;
+        height: 950px;
+    }
+}
+
+@media (max-width: 1500px) {
+    header::after {
+        top: -91%;
+        right: -37%;
+        width: 930px;
+        height: 930px;
+    }
+}
+
+@media (max-width: 1399px) {
+    header::after {
+        top: -101%;
+        right: -43%;
+        width: 910px;
+        height: 910px;
+    }
+}
+@media (max-width: 1270px) {
+    header::after {
+        top: -106%;
+        right: -53%;
+        width: 910px;
+        height: 910px;
+    }
+}
+@media (max-width: 1165px) {
+    header::after {
+        top: -92%;
+        right: -55%;
+        width: 910px;
+        height: 910px;
+    }
+}
+@media (max-width: 1040px) {
+    header::after {
+        top: -103%;
+        right: -63%;
+        width: 910px;
+        height: 910px;
+    }
+}
+/* end ellipse */
+
+/* ================================================================================================================== */
+
 /* Start header */
 
+@media (max-width: 1600px) {
+    nav a {
+        margin-right: 70px
+    }
+}
+
 @media (max-width: 1200px) {
+    nav a {
+        margin-right: 35px
+    }
     header .container nav a {
     font-size: 17px;
     }
     .main-btn {
         font-size: 17px;
-    }
-    header::after {
-        right: -470px;
     }
 }
 
